@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destrega Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Destrega Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="produkLink">Produk</a></li>
+                <li><a href="#" id="keranjangLink">Keranjang</a></li>
+                <li><a href="#" id="checkoutLink">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <!-- Halaman Produk -->
+        <section id="produkSection">
+            <h2>Daftar Produk</h2>
+            <div class="produk" data-id="1" data-nama="Smartphone" data-harga="2000000">
+                <h3>Smartphone</h3>
+                <p>Harga: Rp 2.000.000</p>
+                <button class="tambahKeranjang">Tambah ke Keranjang</button>
+            </div>
+            <div class="produk" data-id="2" data-nama="Laptop" data-harga="7000000">
+                <h3>Laptop</h3>
+                <p>Harga: Rp 7.000.000</p>
+                <button class="tambahKeranjang">Tambah ke Keranjang</button>
+            </div>
+            <div class="produk" data-id="3" data-nama="Headset" data-harga="250000">
+                <h3>Headset</h3>
+                <p>Harga: Rp 250.000</p>
+                <button class="tambahKeranjang">Tambah ke Keranjang</button>
+            </div>
+        </section>
+
+        <!-- Halaman Keranjang -->
+        <section id="keranjangSection" class="hidden">
+            <h2>Keranjang Belanja</h2>
+            <table id="keranjangTable">
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Total</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Halaman Checkout -->
+        <section id="checkoutSection" class="hidden">
+            <h2>Checkout</h2>
+            <p>Total Pembayaran: <span id="totalCheckout">Rp 0</span></p>
+            <button id="bayarButton">Bayar</button>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
